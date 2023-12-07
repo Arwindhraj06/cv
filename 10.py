@@ -40,7 +40,7 @@ while (cap.isOpened()):
                     continue
                 (x, y, w, h) = cv2.boundingRect(contour)
                 cv2.rectangle(orig_frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-            cv2.imshow(orig_frame)
+            cv2.imshow("ha",orig_frame)
             if cv2.waitKey(100) & 0xFF == ord('q'):
                 break
     else:
